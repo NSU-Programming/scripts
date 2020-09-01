@@ -32,3 +32,5 @@ if name not in repos:
     org.create_repo(name, private=True)
 
 git(["push", "-f", "origin", "master"])
+git(["checkout", "-b", "solution"])
+git(["push", "-f", "origin", "solution"])
